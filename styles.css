@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Inter:wght@300&family=Roboto:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lekton&display=swap');
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: 'Roboto';
+}
+body, html{
+    width: auto;
 }
 p{
     color: #535354;
@@ -13,6 +18,7 @@ p{
 .container{
     padding: 50px 100px;
 }
+
 .hero{
     background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
 }
@@ -23,7 +29,7 @@ p{
 
 }
 .subscribe-img{
-    background-image: url("images/Visa card.png");
+
     height: 734.21px;
     min-width: 50%;
     position: absolute;
@@ -60,6 +66,7 @@ a{
 }
 .navbar{
     display:flex;
+    flex-wrap: wrap;
     justify-content:space-between;
     align-items: center;
 }
@@ -82,6 +89,7 @@ a{
 .hero .content{
   
     display: flex;
+    flex-wrap: wrap;
     margin-top: 75px;
     justify-content: space-between;
 
@@ -93,6 +101,7 @@ a{
 
 .features{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 
     justify-content: space-around;
@@ -229,6 +238,7 @@ line-height: 38px;
 }
 .newsletter .container{
     display:flex;
+    flex-wrap: wrap;
     column-gap: 30px;
 }
 .newsletter .container div{
@@ -279,10 +289,12 @@ line-height: 62px;
 }
 .tips{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .tips-body .tips-content{
     display: flex;  
+    flex-wrap: wrap;
 }
 .tips-content img{
     width: 100px;
@@ -313,12 +325,14 @@ height: 507px;
 
 .bottomnav{
     display:flex;
+    flex-wrap: wrap;
     justify-content:space-between;
     align-items: center;
     margin: 60px 0;
 }
 .footer{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content:space-between;
 }
@@ -335,14 +349,12 @@ footer .icons img{
     .container{
         padding: 25px 50px;
     }
-    .navbar,.navbar ul li{
-        display: block;
-
-    }
+   
     .statistics,.newsletter .container,.features,.bottomnav,.footer,.testimonials-body{
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        text-align: center;
 
     }
     .tips {
@@ -352,17 +364,30 @@ footer .icons img{
         display: block;
     }
     .navbar{
-        display: flex;
         flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
 
-
+    }
+    .hero .content{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .navbar ul li{
+        display: block;
     }
     .line,.spiral {
        display: none; 
     }
     .subscribe-img ,.uprightcard, .tips .topimg{
-        background: none;
+
         display: none;
+    }
+    .landscapecard{
+        display: none;
+
     }
 
     .newsletter h4,.icons,footer .brand-name,.login-icon{
